@@ -32,7 +32,7 @@ WebUI.click(findTestObject('Login/a_Masuk'))
 WebUI.setText(findTestObject('Login/input_username'), username)
 WebUI.setText(findTestObject('Login/input_password'), password)
 
-WebUI.takeFullPageScreenshotAsCheckpoint((((GlobalVariable.Screenshot + GlobalVariable.todayDate) + '/') + GlobalVariable.nowTime + '/') + 'halaman login_login.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeFullPageScreenshotAsCheckpoint((((GlobalVariable.dirProject + "\\Screenshots\\" + GlobalVariable.todayDate) + '/') + GlobalVariable.nowTime + '/') + 'halaman login_login.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Login/button_Masuk'))

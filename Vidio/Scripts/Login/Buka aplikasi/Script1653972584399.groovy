@@ -36,7 +36,7 @@ GlobalVariable.nowTime = timeNow
 WebUI.navigateToUrl('https://vidio.com')
 WebUI.delay(2)
 
-WebUI.takeFullPageScreenshotAsCheckpoint(((((GlobalVariable.Screenshot + GlobalVariable.todayDate) + '/') + GlobalVariable.nowTime) + 
+WebUI.takeFullPageScreenshotAsCheckpoint(((((GlobalVariable.dirProject + "\\Screenshots\\" + GlobalVariable.todayDate) + '/') + GlobalVariable.nowTime) + 
     '/') + 'halaman login.png', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
